@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const typebotInitScript = document.createElement("script");
+        typebotInitScript.type = "module";
+        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3.27/dist/web.js'
+
+        Typebot.initPopup({
+        typebot: "w-8-demo2-t5pfhfe",
+        apiHost: "https://viewer.smartbot.dialong.net",
+        });
+        `;
+        document.body.append(typebotInitScript);
+    </script>
+</body>
+</html>
